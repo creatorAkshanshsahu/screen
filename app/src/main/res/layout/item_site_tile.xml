@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp" android:layout_height="225dp" android:layout_margin="12dp"
+    android:focusable="true" android:clickable="true">
+    <!-- oversized name bleeding off the edge, as texture -->
+    <TextView android:id="@+id/siteMono" android:layout_width="640dp" android:layout_height="wrap_content"
+        android:layout_gravity="top|end" android:layout_marginTop="-30dp" android:layout_marginEnd="-22dp"
+        android:gravity="end" android:maxLines="1" android:textColor="#24FFFFFF" android:textSize="150sp"
+        android:fontFamily="@font/sora_bold" android:includeFontPadding="false"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_gravity="bottom" android:orientation="vertical" android:padding="24dp">
+        <TextView android:id="@+id/siteName" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="#FFFFFF" android:textSize="28sp" android:fontFamily="@font/sora_semibold"/>
+        <TextView android:id="@+id/siteUrl" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" android:textColor="#CCFFFFFF" android:textSize="13sp"/>
+    </LinearLayout>
+</FrameLayout>
